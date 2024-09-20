@@ -164,11 +164,11 @@ assistantTab.addEventListener("click", function () {
 });
 
 // live validation for input
-// document.getElementById("income").addEventListener("input", function () {
-//   const inputValue = parseFloat(document.getElementById("income").value);
+document.getElementById("income").addEventListener("input", function () {
+  const inputValue = parseFloat(document.getElementById("income").value);
 
-//   if (isNaN(inputValue) || inputValue <= 0) {
-//     document.getElementById("income-error").classList.remove("hidden");
-//     return;
-//   }
-// });
+  if (isNaN(inputValue) || inputValue <= 0) {
+    document.getElementById("income-error").classList.remove("hidden");
+    return;
+  }
+});
